@@ -1,0 +1,52 @@
+/* src/App.css */
+.App {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.book-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.book-form input {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.book-form button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.book-sections section {
+  margin-bottom: 2rem;
+}
+
+.book-sections ul {
+  list-style: none;
+  padding: 0;
+}
+
+.book-sections li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  margin-bottom: 0.5rem;
+}
+
+.actions button {
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
