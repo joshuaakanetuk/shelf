@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import './App.css'; // Optional CSS for styling
 
 // Component to search books using the Google Books API
-function SearchBooks({ onAddBook }) {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [results, setResults] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
+function SearchBooks({ onAddBook }: { onAddBook: (book: any) => void }) {
+  const [searchTerm, setSearchTerm] = useState<string>('');
+  const [results, setResults] = useState<any[]>([]);
+  const [loading, setLoading] = useState<boolean>(false);
+  const [error, setError] = useState<string | null>(null);
 
   const handleSearch = (e) => {
     e.preventDefault();
